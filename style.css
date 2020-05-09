@@ -1,0 +1,177 @@
+@font-face 
+{
+    font-family: 'ambleregular';
+    src: url('Amble-Regular-webfont.eot');
+    src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Regular-webfont.woff2') format('woff2'),
+         url('Amble-Regular-webfont.woff') format('woff'),
+         url('Amble-Regular-webfont.ttf') format('truetype'),
+         url('Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#global
+{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+    display: flex;
+}
+#left, #right
+{
+    display: inline-block;
+    vertical-align: top;
+}
+#left
+{
+    background-color: aquamarine;
+    width: 30%;
+    margin-right: auto;
+    text-align: center;
+}
+#right
+{
+    background-color: beige;
+    overflow: auto;
+    width: 70%; 
+    border: 5px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 990px)
+{
+#global
+{
+    width: 80%;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+ }
+#left
+
+    {
+        background-color: aquamarine;
+        width: auto; 
+    }
+    
+#right
+{
+    background-color: yellow;
+    width: auto;
+    h2
+    {
+    
+    }
+}
+
+   #body
+   {
+        background-color: #848; 
+    }
+}
+    
+h1
+    {
+        font-family: 'Amble-regular','arial','sans-serif';
+        color: darkorange;
+    }
+strong
+{
+    color: black;
+}
+
+
+h1 + h2
+{
+color:darkblue;
+text-decoration: underline;
+}
+   
+img
+{
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        border: 3px solid black;
+        justify-content: center;
+        align-items: center;
+}
+
+a:hover
+{
+    color : blue;
+}
+#liseret
+{
+    height: 100%;
+    background-color: chartreuse;
+}
+.itemcontact h2
+{
+    width: 97%;
+    border: solid;
+    text-align: center;
+    background-color: black;
+    color: floralwhite;
+}
+.itemaproposdemoi h2
+{
+    width: 97%;
+    border: solid;
+    text-align: center;
+    background-color: black;
+    color: floralwhite;
+}
+.itemloisirs h2
+{
+    width: 97%;
+    border: solid;
+    text-align: center;
+    background-color: black;
+    color: floralwhite;
+}
+.itemformation h2
+{
+    text-decoration: underline;
+    text-decoration-color: coral;
+}
+.itemexperience h2
+{
+    text-decoration: underline;
+    text-decoration-color: coral;
+}
+.itemrecommandation h2
+{
+    text-decoration: underline;
+    text-decoration-color: coral;
+}
+.fa-swimmer
+{
+     font-size: 40px;
+    border-radius: 50%;
+    border: black 2px solid;
+    padding: 10px 5px;
+}
+.fa-running
+{
+     font-size: 40px;
+    border-radius: 50%;
+    border: black 2px solid;
+    padding: 10px 12px;
+}
+.fa-xbox
+{
+     font-size: 40px;
+    border-radius: 50%;
+    border: black 2px solid;
+    padding: 10px 12px; 
+}
+#recommandation
+{
+
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    justify-content: space-around;
+}
