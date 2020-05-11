@@ -10,12 +10,16 @@
     font-weight: normal;
     font-style: normal;
 }
+body
+{
+    width: 1348px;
+    height: 1684px;
+    margin: opx;
+}
 #global
 {
-    width: 100%;
-    margin: auto;
     overflow: auto;
-    display: flex;
+    display: flex;  
 }
 #left, #right
 {
@@ -24,7 +28,7 @@
 }
 #left
 {
-    background-color: aquamarine;
+    background-color: orange;
     width: 30%;
     margin-right: auto;
     text-align: center;
@@ -39,12 +43,12 @@
 }
 
 
-@media screen and (max-width: 990px)
+@media screen and (max-width: 1200px)
 {
 #global
 {
     width: 100%;
-    margin: auto; 
+    margin: opx; 
     display: flex;
     flex-direction: column;
  }
@@ -59,10 +63,6 @@
 {
     background-color: yellow;
     width: auto;
-    h2
-    {
-    
-    }
 }
 
    #body
@@ -74,11 +74,11 @@
 h1
     {
         font-family: 'Amble-regular','arial','sans-serif';
-        color: darkorange;
+        color: black;
     }
 strong
 {
-    color: black;
+    color: orange;
 }
 
 
@@ -89,6 +89,7 @@ color:darkblue;
 h2 > span
 {
     text-decoration: underline;
+    text-decoration-color: orange;
 }
    
 img
@@ -105,34 +106,30 @@ a:hover
 {
     color : blue;
 }
-#liseret
-{
-    height: 100%;
-    background-color: chartreuse;
-}
+
 .itemcontact h2
 {
-    width: 97%;
+    width: 100%;
     border: solid;
     text-align: center;
     background-color: black;
-    color: floralwhite;
+    color: orange;
 }
 .itemaproposdemoi h2
 {
-    width: 97%;
+    width: 100%;
     border: solid;
     text-align: center;
     background-color: black;
-    color: floralwhite;
+    color: orange;
 }
 .itemloisirs h2
 {
-    width: 97%;
+    width: 100%;
     border: solid;
     text-align: center;
     background-color: black;
-    color: floralwhite;
+    color: orange;
 }
 .itemformation h2
 {
