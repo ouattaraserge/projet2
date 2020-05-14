@@ -14,6 +14,7 @@ body
 {
     width: 100%;
     height: auto;
+    margin-bottom: auto;
 }
 #global
 {
@@ -42,26 +43,46 @@ body
     border: 1px solid black;
     text-align: center;
     margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
-h1
+h1 ,h2 
 {
     text-align: left;
+}
+h3
+{
+    text-decoration: underline;
+    text-decoration-color: coral;width: 80%;
+    text-align:justify;
+    margin-left: 60px;
+    font-size: 1.3em;
+}
+h3 + span
+{
+
+}
+.itemformation h3
+{
+    margin-top: 100px;
+}
+.itemexperience h3
+{
+    margin-top: 120px;
+}
+.itemrecommandations
+{
+    margin-top: 120px;
 }
 strong
 {
+    color: coral;
     text-align: left;
 }
 
-#recommandation
-{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 900px)
 {
 #global
     {
@@ -75,13 +96,14 @@ strong
 
     {
         background-color: #FFE082;
-        width: 100%; 
+        width: 500px; 
     }
     
 #right
 {
     background-color: ;
     width: 100%;
+    margin-bottom: auto;
 }
 
    #body
@@ -96,10 +118,7 @@ h1
         color: black;
         font-size: 3 em;
     }
-strong
-{
-    color: orange;
-}
+
 
 
 h1 + h2
@@ -142,6 +161,7 @@ a:hover
     text-align: center;
     background-color: black;
     color: orange;
+    margin-top: 120px;
 }
 .itemloisirs h2
 {
@@ -150,18 +170,14 @@ a:hover
     text-align: center;
     background-color: black;
     color: orange;
+    margin-top: 230px;
 }
-.itemformation h2
+.itemformation h3
 {
     text-decoration: underline;
     text-decoration-color: coral;
 }
-.itemexperience h2
-{
-    text-decoration: underline;
-    text-decoration-color: coral;
-}
-.itemrecommandations
+.itemexperience h3
 {
     text-decoration: underline;
     text-decoration-color: coral;
@@ -172,6 +188,7 @@ a:hover
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 5px;
+    
 }
 .fa-running
 {
@@ -186,10 +203,10 @@ a:hover
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 12px; 
+    
 }
-#recommandation
+#itemrecommandations
 {
-
     display: flex;
     flex-direction: row;
     vertical-align: top;
