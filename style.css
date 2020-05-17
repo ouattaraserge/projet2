@@ -47,6 +47,27 @@ body
     margin-bottom: 10px;
     margin-right: 5px;
 }
+.
+{
+    border-radius: 50%;
+}
+.date
+{
+    border: 
+    width: 100px;
+    display:flex;
+    justify-content: space-between;
+    white-space: pre-wrap;
+}
+strong
+{
+    color: coral;
+    text-align: left;
+}
+p 
+{
+    margin-left: 25px;
+}
 h1 ,h2 
 {
     text-align: left;
@@ -63,24 +84,28 @@ h3 + span
 {
 
 }
-.itemformation h3
+#itemformation h3
 {
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-column-gap: 5px;
+    margin: 5px;
 }
-.itemexperience h3
+#itemexperience h3
 {
     margin-top: 120px;
+    display: flex;
+    justify-content:space-between;
+    -webkit-column-gap: 5px;
+    margin:5px;
 }
 .itemrecommandations
 {
     margin-top: 120px;
+    display: flex;
+    
 }
-strong
-{
-    color: coral;
-    text-align: left;
-}
-
 
 @media screen and (max-width: 900px)
 {
@@ -101,9 +126,10 @@ strong
     
 #right
 {
-    background-color: ;
+    background-color: azure;
     width: 100%;
-    margin-bottom: auto;
+    margin-left: 40px;
+    margin-right: auto;
 }
 
    #body
@@ -133,12 +159,13 @@ h2 > span
    
 img
 {
-        height: 150px;
-        width: 150px;
-        border-radius: 100px;
-        border: 3px solid black;
-        justify-content: center;
-        align-items: center;
+    margin-top: 15px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover
@@ -181,6 +208,7 @@ a:hover
 {
     text-decoration: underline;
     text-decoration-color: coral;
+    
 }
 .fa-swimmer
 {
@@ -204,11 +232,4 @@ a:hover
     border: black 2px solid;
     padding: 10px 12px; 
     
-}
-#itemrecommandations
-{
-    display: flex;
-    flex-direction: row;
-    vertical-align: top;
-    justify-content: space-around;
 }
