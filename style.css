@@ -1,220 +1,159 @@
-@font-face 
-{
+@font-face {
     font-family: 'ambleregular';
     src: url('Amble-Regular-webfont.eot');
     src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Amble-Regular-webfont.woff2') format('woff2'),
-         url('Amble-Regular-webfont.woff') format('woff'),
-         url('Amble-Regular-webfont.ttf') format('truetype'),
-         url('Amble-Regular-webfont.svg#ambleregular') format('svg');
+        url('Amble-Regular-webfont.woff2') format('woff2'),
+        url('Amble-Regular-webfont.woff') format('woff'),
+        url('Amble-Regular-webfont.ttf') format('truetype'),
+        url('Amble-Regular-webfont.svg#ambleregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-#global
-{
-    width: 827px;
-    height: auto;
+
+#global {
+    max-width: 1000px;
     margin: auto;
-    overflow: auto;
     display: flex;
 }
-a
-{
+
+a {
     color: coral;
     text-decoration: none;
 }
-a:hover
-{
+
+a:hover {
     color: blue;
 }
-#left, #right
-{
+
+#left,
+#right {
     display: inline-block;
     vertical-align: top;
 }
-#left
-{
+
+#left {
     background-color: #FFE082;
     width: 35%;
     margin-right: 1px;
     text-align: center;
+    flex: 1;
 }
-#left h2
-{
+
+#right {
+    background-color: whitesmoke;
+    border: 5px;
+    padding-left: 65px;
+    flex: 2;
+}
+
+#left h2 {
     width: 100%;
     background-color: black;
     color: white;
 }
 
-.photo
-{
-    margin:auto;
+.photo {
+    margin: auto;
 }
-   
-.photo img
-{
+
+.photo img {
     justify-content: center;
     align-items: center;
-    height: 150px;  
-     width: 150px;
+    height: 150px;
+    width: 150px;
     border-radius: 100%;
     border: 3px solid black;
     margin-top: 30px;
 }
-.itemcontact
-{
+
+.itemcontact {
     height: 400px;
     margin-top: 70px;
 }
-.infocontact , .infoaproposdemoi 
-{
+
+.infocontact {}
+
+.infoaproposdemoi {
     text-align: justify;
     padding: 0 15px;
 }
-.itemaproposdemoi
-{
-    height: 800px;
+
+.itemaproposdemoi {
+    height: 650px;
 }
-.itemloisirs
-{
+
+.itemloisirs {
     height: auto;
 }
-.soulign
-{
+
+.soulign {
     text-decoration: underline coral;
 }
 
-#right
-{
-    background-color: whitesmoke;
-    overflow: auto;
-    width: 65%; 
-    border: 5px;
-    padding: 30px;
-    padding-left: 65px;
-}
-h1
-{
+h1 {
     font-size: 2.5em;
     font-family: 'ambleregular';
 }
-#right h1 strong
-{
+
+#right h1 strong {
     color: coral;
 }
-#right h2 i
-{
-    display: inline-block;
-    margin-right: 25px;
-    color: coral;
+
+#right h2 i {}
+
+.itemformation {
+    display: flex;
+    margin-left: 100px;
 }
-.itemformation, .itemexperience, .itemrecommandation
-{
-    width: 100%;
-    margin-top: 60px;   
+
+.info {
+    width: 200px;
 }
-.formation, .experience, .recommandation
-{
-    border-top: 1px solid coral;
-    padding-top: 15px;
-    margin-top: 0;  
+
+.formation {
+    margin-left: 50px;
+    max-width: 500px;
 }
-.soutien1 , .soutien2
-{
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
+
+.itemexperience {
+    display: flex;
+    margin-left: 100px;
 }
-.form1 , .form2
-{
-    width: 100%  
+
+.info {
+    width: 200px;
 }
-.date1 , .etablissement1
-{
-    display: inline-block;
-    vertical-align: top;
+
+.experience {
+    margin-left: 50px;
+    max-width: 500px;
 }
-.etablissement1, .etablissement2
-{
-    width: 350px;
-    margin-left: 35px;
-    text-align: justify;
+
+.itemrecommandations {
+    display: flex;
+    max-width: 1000px;
 }
-.date1, .date2 ,.date3, .date4 ,.date5
-{
-    font-size: 12px;
+
+.recommandations {
+    margin-left: 50px;
+    max-width: 500px;
+    justify-content: space-around;
 }
-.date1 i, .date2 i
-{
-    color: coral;
+
+.info {
+    color:
 }
-.date2 ,.etablissement2
-{
-    display: inline-block;
-    vertical-align: top;
-}
-.date3, .activite1
-{
-    display: inline-block
-    vertical-aligne: top;
-    flex: 1px;
-}
-.date3 , .activite2
-{
-    display: inline-block;
-    vertical-align: top;
-    flex: 1;
-}
-.date5 , .activite3
-{
-    display: inline-block;
-    vertical-align: top;
-    flex: 1;
-}
-.periode1 , .activite1
-{
-    display: inline-block;
-    vertical-align: top;    
-}
-.periode2 , .activite2
-{
-   display: inline-block;
-    vertical-align: top;
-}
-.activite1 , .activite2 
-{
-    width: 320px;
-    margin-left: 55px;
-    text-align: justify;
-}
-.activite3
-{
-   width: 320px;
-    margin-left: 29px;
-}
-.periode3 , .activite3
-{
-    display: inline-block;
-    vertical-align: top;
-}
-.periode1 , .periode2 , .periode3
-{
-    font-size: 12px;
-}
-.periode1 i , .periode2 i , .periode3 i
-{
-    color: coral;
-}
-.fa-swimmer
-{
-     font-size: 40px;
+
+.fa-swimmer {
+    font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 5px;
 }
-.fa-running, .fa-xbox
-{
-     font-size: 40px;
+
+.fa-running,
+.fa-xbox {
+    font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 12px;
@@ -226,79 +165,62 @@ h1
 
 
 /*mise en forme pour mobile*/
-@media screen and (max-width: 990px)
-{
-#global
-{
-    width: 100%;
-    margin: 0; 
-    display: flex;
-    flex-direction: column;
- }
-#left
-
-    {
-        background-color: #FFE082;
-        width: auto; 
+@media screen and (max-width: 990px) {
+    #global {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
     }
-    
-#right
-{
-    background-color: whitesmoke;
-    width: auto;
-}
-    
-h1
-    {
-        font-family: 'Amble-regular','arial','sans-serif';
+
+    #left {
+        background-color: #FFE082;
+        width: auto;
+    }
+
+    #right {
+        background-color: whitesmoke;
+        width: auto;
+    }
+
+    h1 {
+        font-family: 'Amble-regular', 'arial', 'sans-serif';
         color: darkorange;
     }
-strong
-{
-    color: black;
-}
-body
-    {
+
+    strong {
+        color: black;
+    }
+
+    body {
         background-color: none;
-    } 
-a
-{
-    color: coral;
-    text-decoration: none;
-}
-a:hover
-{
-    color : blue;
-}
-.itemcontact h2, .itemaproposdemoi h2, .itemloisirs h2
-{
-    width: 100%;
-    text-align: center;
-    background-color: black;
-    color: floralwhite;
-}
-.itemformation h2, .itemexperience h2, .itemrecommandation h2
-{
-    margin-bottom: 5px;
-}
-.fa-swimmer
-{
-     font-size: 40px;
-    border-radius: 50%;
-    border: black 2px solid;
-    padding: 10px 5px;
-}
-.fa-running, .fa-xbox
-{
-     font-size: 40px;
-    border-radius: 50%;
-    border: black 2px solid;
-    padding: 10px 12px;
-}
-#recommandation
-{ 
-     display: flex;
-    flex-direction: row;
-    vertical-align: top;
-    justify-content: space-around;   
-}
+    }
+
+    a {
+        color: coral;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+    }
+    .itemloisirs h2 {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: floralwhite;
+    }
+    .fa-swimmer {
+        font-size: 40px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 5px;
+    }
+
+    .fa-running,
+    .fa-xbox {
+        font-size: 40px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 12px;
+    }
