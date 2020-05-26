@@ -15,20 +15,16 @@
     margin: auto;
     display: flex;
 }
-
+#right {
+    display: inline-block;
+    vertical-align: top;
+}
 a {
     color: coral;
     text-decoration: none;
 }
-
 a:hover {
     color: blue;
-}
-
-#left,
-#right {
-    display: inline-block;
-    vertical-align: top;
 }
 
 #left {
@@ -45,6 +41,15 @@ a:hover {
     padding-left: 65px;
     flex: 2;
 }
+#right h2 i{
+    display: inline-block;
+    color: coral;
+    margin-right: 25px;
+}
+.soulign{
+    text-decoration: underline coral;
+}
+
 
 #left h2 {
     width: 100%;
@@ -71,7 +76,10 @@ a:hover {
     margin-top: 70px;
 }
 
-.infocontact {}
+.infocontact {
+    text-align: justify;
+    padding: 0 15px;
+}
 
 .infoaproposdemoi {
     text-align: justify;
@@ -83,7 +91,7 @@ a:hover {
 }
 
 .itemloisirs {
-    height: auto;
+    height: 150px;
 }
 
 .soulign {
@@ -94,16 +102,21 @@ h1 {
     font-size: 2.5em;
     font-family: 'ambleregular';
 }
-
+h5{
+    font-size: 1.3em;
+    font-family: 'ambleregular';
+}
 #right h1 strong {
     color: coral;
 }
 
-#right h2 i {}
+#right h2 i {
+    text-decoration: underline;
+}
 
 .itemformation {
     display: flex;
-    margin-left: 100px;
+    margin-left: 00px;
 }
 
 .info {
@@ -117,7 +130,7 @@ h1 {
 
 .itemexperience {
     display: flex;
-    margin-left: 100px;
+    margin-left: 00px;
 }
 
 .info {
@@ -131,7 +144,8 @@ h1 {
 
 .itemrecommandations {
     display: flex;
-    max-width: 1000px;
+    max-width: 900px;
+    margin-left:
 }
 
 .recommandations {
@@ -140,8 +154,8 @@ h1 {
     justify-content: space-around;
 }
 
-.info {
-    color:
+.info i {
+    color: coral;
 }
 
 .fa-swimmer {
@@ -151,8 +165,7 @@ h1 {
     padding: 10px 5px;
 }
 
-.fa-running,
-.fa-xbox {
+.fa-running , .fa-xbox {
     font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
@@ -216,9 +229,7 @@ h1 {
         border: black 2px solid;
         padding: 10px 5px;
     }
-
-    .fa-running,
-    .fa-xbox {
+    .fa-xbox .fa-running {
         font-size: 40px;
         border-radius: 50%;
         border: black 2px solid;
