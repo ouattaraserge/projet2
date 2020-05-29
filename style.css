@@ -19,10 +19,12 @@
     display: inline-block;
     vertical-align: top;
 }
+
 a {
     color: coral;
     text-decoration: none;
 }
+
 a:hover {
     color: blue;
 }
@@ -41,13 +43,21 @@ a:hover {
     padding-left: 65px;
     flex: 2;
 }
-#right h2 i{
+
+#right h3 i{
     display: inline-block;
-    color: coral;
     margin-right: 25px;
+    text-underline-position: right;
 }
-.soulign{
-    text-decoration: underline coral;
+i{
+    color: coral;
+}
+
+h3{
+    text-underline-position: right;
+    font-size: 1.3em;
+    text-decoration: underline;
+    text-decoration-color: coral;
 }
 
 
@@ -102,15 +112,17 @@ h1 {
     font-size: 2.5em;
     font-family: 'ambleregular';
 }
-h5{
+
+h6 {
     font-size: 1.3em;
     font-family: 'ambleregular';
 }
+
 #right h1 strong {
     color: coral;
 }
 
-#right h2 i {
+#right h3 i {
     text-decoration: underline;
 }
 
@@ -118,8 +130,7 @@ h5{
     display: flex;
     margin-left: 00px;
 }
-
-.info {
+.info{
     width: 200px;
 }
 
@@ -165,7 +176,8 @@ h5{
     padding: 10px 5px;
 }
 
-.fa-running , .fa-xbox {
+.fa-running,
+.fa-xbox {
     font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
@@ -178,7 +190,7 @@ h5{
 
 
 /*mise en forme pour mobile*/
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1280px) {
     #global {
         width: 100%;
         margin: 0;
@@ -217,18 +229,21 @@ h5{
     a:hover {
         color: blue;
     }
+
     .itemloisirs h2 {
         width: 100%;
         text-align: center;
         background-color: black;
         color: floralwhite;
     }
+
     .fa-swimmer {
         font-size: 40px;
         border-radius: 50%;
         border: black 2px solid;
         padding: 10px 5px;
     }
+
     .fa-xbox .fa-running {
         font-size: 40px;
         border-radius: 50%;
