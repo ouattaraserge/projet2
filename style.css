@@ -27,11 +27,12 @@
     padding-left: 65px;
     flex: 2;
     display: inline-block;
-    vertical-align: top;   
+    vertical-align: top; 
 }
-h7 > span{
+h2 > span{
     text-decoration: underline;
     text-decoration-color: coral;
+    font-size: 1.4em;
 }
 a {
     color: coral;
@@ -58,21 +59,19 @@ a:hover {
     background-color: black;
     color: white;
 }
-.photo {
-    margin: auto;
-}
 .photo img {
     justify-content: center;
     align-items: center;
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    border: 3px solid black;
+    border: 3px;
     margin-top: 30px;
+    border: inset;
 }
 
 .itemcontact {
-    height: 400px;
+    height: auto;
     margin-top: 70px;
 }
 .infocontact {
@@ -80,14 +79,13 @@ a:hover {
     padding: 0 15px;
 }
 .infoaproposdemoi {
-    text-align: justify;
     padding: 0 15px;
 }
 .itemaproposdemoi {
-    height: 650px;
+    height: 320px;
 }
 .itemloisirs {
-    height: 150px;
+    height: 320px;
 }
 h1 {
     font-size: 3.4em;
@@ -102,53 +100,54 @@ h5 {
     font-size: 1.3em;
     font-family: 'ambleregular';
 }
-h7{
-    font-size: 1.4em;
+p{
+    text-align: justify;    
+    word-wrap: break-word;
+    text-align: justify;
 }
 #right h1 strong {
     color: coral;
     font-weight: 300;
 }
-#right i h2{
-    text-decoration-color: coral;
-    
-}
 .itemformation {
     display: flex;
     margin-left: 00px;
-    height: 250px;
+    height: 200px;
+    width: 700px;
+}
+.formation {
+    margin-left: 50px;
+    height: 1500px;
+    width: 700px;
 }
 .info{
     width: 100px;
     height: 100px;
 }
-.formation {
-    margin-left: 50px;
-    width: 700px;
-    height: 150px;
-}
 .itemexperience {
     display: flex;
     margin-left: 00px;
-    height: 200px;
+    height: 180px;
+    width: 700px;
+}
+.experience {
+    margin-left: 50px;
+    height: 150px;
+    width: 700px
 }
 .info {
     width: 100px;
 }
-.experience {
-    margin-left: 50px;
-    width: 700px;
-}
 .itemrecommandations {
     display: flex;
-    width: 900px;
-    height:
+    height:250px;
+    width: 700px;;
 }
 .recommandations {
     margin-left: 50px;
-    max-width:  width: 400px;
+    width: auto;
     justify-content: space-around;
-    height: 350px;
+    height: 300px;
 }
 .info i {
     color: coral;
@@ -210,13 +209,9 @@ h1 {
 a:hover {
     color: blue;
 }
-p{
-    word-wrap: break-word;
-    text-align: justify;
-}
 .itemformation {
     flex-direction: column;
-    height: 400px;
+    height: auto;
     
 }
 .info{  
@@ -225,28 +220,29 @@ p{
 .formation {
     margin-left: 0;
     text-align: justify;
+    height: auto;
 }
 .itemexperience {
     flex-direction: column;
-    height: 250px;
+    height: auto;
 }
 .experience {
     margin-left: 0px;
     text-align: justify;
-    overflow: auto;
 }
 .itemrecommandations {
     flex-direction: column;
-    height:300px
+    height:auto;
 }
 .recommandations {
     margin-left: 0;
+    height: auto;
 }  
 .itemcontact {
-    height: 320px;
+    height: auto;
 }
 .itemaproposdemoi {
-    height: 200px;
+    height: auto;
 }
 .itemloisirs {
     height: 110px;
