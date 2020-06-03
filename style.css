@@ -198,97 +198,87 @@ h5 {
 
 
 /*mise en forme pour mobile*/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
 #global {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
-    #left{
-        margin-right: auto;
-        vertical-align: top;
-        width: auto;
-    }
-    #right{
-        margin-right: auto;
-        width: auto;
-    }
 .photo img {
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     height: 150px;
     width: 150px;
     border-radius: 100%;
     border: 3px solid black;
     margin-top: 30px;
-    }
+}
+
 
 h1 {
     font-family: 'Amble-regular', 'arial', 'sans-serif';
     color: darkorange;
-}
-
-strong {
-    color: black;
+    font-size: 1.3em;
+    text-align:left;
 }
 
 body {
     background-color: honeydew;
 }
 
-a {
-    color: coral;
-    text-decoration: none;
-}
-
 a:hover {
     color: blue;
 }
+p{
+    text-align: justify;    
+    }
 .itemformation {
     flex-direction: column;
+    height: 350px;
 }
 .info{
-    margin-left: 1px
-    
-}
+    margin-left:0;
+    margin-right: auto;   
+    }
 
 .formation {
-    margin-left: 1px;
+    margin-left: 0;
     width: 400px;
-    height: 800px;
+    text-align: justify;
 }
 .itemexperience {
     flex-direction: column;
     height: 250px;
-}
-
-.info {
-    margin-left: 1px;
+    text-align: justify;
+    width: 400px;
 }
 
 .experience {
-    margin-left: 1px;
+    margin-left: 0px;
     width: 800px;
+    text-align: justify;
 }
 .itemrecommandations {
     flex-direction: column;
-    width:200px;
+    width:400px;
     height:300px
 }
 
 .recommandations {
-    margin-left: 10px;
+    margin-left: 0;
     width: 400px;
 }  
 .itemcontact {
-height: 320px;
-margin-top: 0px;
+    height: 320px;
+    margin-top: 0px;
+    width: 400px;
 }
 
 .itemaproposdemoi {
-height: 180px;
+    height: 200px;
+    width: 400px;
 }
 .itemloisirs {
-    width: 100%;
+    width: 400px;
     height: 110px;
     text-align: center;
     background-color: black;
@@ -296,15 +286,21 @@ height: 180px;
 }
 
 .fa-swimmer {
-    font-size: 40px;
+    font-size: 20px;
     border-radius: 50%;
     border: black 2px solid;
      padding: 10px 5px;
 }
 
-.fa-xbox .fa-running {
-    font-size: 40px;
+.fa-xbox{
+    font-size: 20px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 12px;
 }
+    .fa-running {
+    font-size: 20px;
+    border-radius: 50%;
+    border: black 2px solid;
+    padding: 10px 12px;  
+    }
