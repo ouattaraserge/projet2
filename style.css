@@ -15,33 +15,29 @@
     margin: auto;
     display: flex;
 }
-#right {
-    display: inline-block;
-    vertical-align: top;
-}
-h2 > span{
-    text-decoration: underline;
-}
-a {
-    color: coral;
-}
-
-a:hover {
-    color: blue;
-}
-
 #left {
     background-color: #FFE082;
     margin-right: 1px;
     text-align: center;
     flex: 1;
 }
-
 #right {
     background-color: whitesmoke;
     border: 5px;
     padding-left: 65px;
     flex: 2;
+    display: inline-block;
+    vertical-align: top;   
+}
+h7 > span{
+    text-decoration: underline;
+    text-decoration-color: coral;
+}
+a {
+    color: coral;
+}
+a:hover {
+    color: blue;
 }
 #right h2 i{
     display: inline-block;
@@ -50,7 +46,6 @@ a:hover {
 #right i{
     color: coral;
 }
-
 #right h2{
     font-size: 1.3em;
     font-weight:500;
@@ -58,17 +53,14 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: coral;
 }
-
 #left h2 {
     width: 100%;
     background-color: black;
     color: white;
 }
-
 .photo {
     margin: auto;
 }
-
 .photo img {
     justify-content: center;
     align-items: center;
@@ -83,45 +75,44 @@ a:hover {
     height: 400px;
     margin-top: 70px;
 }
-
 .infocontact {
     text-align: justify;
     padding: 0 15px;
 }
-
 .infoaproposdemoi {
     text-align: justify;
     padding: 0 15px;
 }
-
 .itemaproposdemoi {
     height: 650px;
 }
-
 .itemloisirs {
     height: 150px;
 }
-
 h1 {
-    font-size: 2.5em;
+    font-size: 3.4em;
     font-family: 'ambleregular';
+    font-weight: 300;
     height: 100px;
 }
-
+h4{
+    font-size: 1.1em;
+}
 h5 {
     font-size: 1.3em;
     font-family: 'ambleregular';
 }
-
+h7{
+    font-size: 1.4em;
+}
 #right h1 strong {
     color: coral;
+    font-weight: 300;
 }
-
 #right i h2{
     text-decoration-color: coral;
     
 }
-
 .itemformation {
     display: flex;
     margin-left: 00px;
@@ -131,7 +122,6 @@ h5 {
     width: 100px;
     height: 100px;
 }
-
 .formation {
     margin-left: 50px;
     width: 700px;
@@ -142,40 +132,33 @@ h5 {
     margin-left: 00px;
     height: 200px;
 }
-
 .info {
     width: 100px;
 }
-
 .experience {
     margin-left: 50px;
     width: 700px;
 }
-
 .itemrecommandations {
     display: flex;
     width: 900px;
     height:
 }
-
 .recommandations {
     margin-left: 50px;
     max-width:  width: 400px;
     justify-content: space-around;
     height: 350px;
 }
-
 .info i {
     color: coral;
 }
-
 .fa-swimmer {
     font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 5px;
 }
-
 .fa-running{
     font-size: 40px;
     border-radius: 50%;
@@ -195,109 +178,98 @@ h5 {
 
 
 /*mise en forme pour mobile*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) 
+{
 #global {
-    width: 100%;
+    display: flex;
     flex-direction: column;
+    background-color: honeydew;  
+}
+    #left{
+        margin: 0px;
+    }   
+#right{
+    padding-left: 0;
+    margin: 0px;
 }
 .photo img {
-    justify-content:center;
-    align-items: center;
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    border: 3px solid black;
-    margin-top: 30px;
+    border: 3px solid yellow;
+    -moz-border-radius:75px;
+    -webkit-border-radius:75px;
 }
-
-
 h1 {
     font-family: 'Amble-regular', 'arial', 'sans-serif';
     color: darkorange;
     font-size: 1.3em;
+    font-weight: 300;
     text-align:left;
 }
-
-body {
-    background-color: honeydew;
-}
-
 a:hover {
     color: blue;
 }
 p{
-    text-align: justify;    
-    }
+    word-wrap: break-word;
+    text-align: justify;
+}
 .itemformation {
     flex-direction: column;
-    height: 350px;
+    height: 400px;
+    
 }
-.info{
-    margin-left:0;
-    margin-right: auto;   
-    }
-
+.info{  
+    text-align: left;
+}
 .formation {
     margin-left: 0;
-    width: 400px;
     text-align: justify;
 }
 .itemexperience {
     flex-direction: column;
     height: 250px;
-    text-align: justify;
-    width: 400px;
 }
-
 .experience {
     margin-left: 0px;
-    width: 800px;
     text-align: justify;
+    overflow: auto;
 }
 .itemrecommandations {
     flex-direction: column;
-    width:400px;
     height:300px
 }
-
 .recommandations {
     margin-left: 0;
-    width: 400px;
 }  
 .itemcontact {
     height: 320px;
-    margin-top: 0px;
-    width: 400px;
 }
-
 .itemaproposdemoi {
     height: 200px;
-    width: 400px;
 }
 .itemloisirs {
-    width: 400px;
     height: 110px;
     text-align: center;
     background-color: black;
     color: floralwhite;
 }
-
 .fa-swimmer {
     font-size: 20px;
     border-radius: 50%;
     border: black 2px solid;
      padding: 10px 5px;
 }
-
 .fa-xbox{
     font-size: 20px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 12px;
 }
-    .fa-running {
+.fa-running {
     font-size: 20px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 12px;  
-    }
+}
+}
