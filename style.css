@@ -11,54 +11,65 @@
 }
 
 #global {
-    max-width: 1200px;
+    max-width: 1190px;
     margin: auto;
     display: flex;
 }
+
 #left {
     background-color: #FFE082;
     margin-right: 1px;
     text-align: center;
     flex: 1;
 }
+
 #right {
     background-color: whitesmoke;
     border: 5px;
     padding-left: 65px;
     flex: 2;
     display: inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
-h2 > span{
-    text-decoration: underline;
-    text-decoration-color: coral;
-    font-size: 1.4em;
-}
+
 a {
     color: coral;
 }
+
 a:hover {
     color: blue;
 }
-#right h2 i{
-    display: inline-block;
-    margin-right: 25px;
-}
-#right i{
-    color: coral;
-}
-#right h2{
-    font-size: 1.3em;
-    font-weight:500;
-    font-style: normal;
+
+h2 > span {
     text-decoration: underline;
     text-decoration-color: coral;
 }
+.itemnom h2{
+    font-size: 1.4em;
+    font-family: "trebuchet ms";
+}
+
+#right h2 i {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#right i {
+    color: coral;
+}
+
+#right h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+    font-style: normal;
+}
+
 #left h2 {
     width: 100%;
     background-color: black;
     color: white;
 }
+
 .photo img {
     justify-content: center;
     align-items: center;
@@ -72,98 +83,131 @@ a:hover {
 
 .itemcontact {
     height: auto;
-    margin-top: 70px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    
 }
+
 .infocontact {
     text-align: justify;
     padding: 0 15px;
 }
+
 .infoaproposdemoi {
     padding: 0 15px;
 }
+
 .itemaproposdemoi {
     height: 320px;
+    margin-bottom: 400px;
 }
+
 .itemloisirs {
     height: 320px;
 }
+
 h1 {
     font-size: 3.4em;
     font-family: 'ambleregular';
     font-weight: 300;
-    height: 100px;
 }
-h4{
+
+.name {
+    display: none;
+}
+
+h4 {
     font-size: 1.1em;
 }
+
 h5 {
     font-size: 1.3em;
     font-family: 'ambleregular';
 }
-p{
-    text-align: justify;    
+
+p {
+    text-align: justify;
     word-wrap: break-word;
     text-align: justify;
 }
+
 #right h1 strong {
     color: coral;
     font-weight: 300;
 }
+
 .itemformation {
     display: flex;
     margin-left: 00px;
     height: 200px;
     width: 700px;
 }
+.itemformations, .itemexperiences, .itemRecom{
+     border-top: 2px solid coral;
+    margin-top: 0;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+.titleForm, .titleExperience, .titleRecom{
+    margin-top: 120px;
+    margin-bottom: 4px;
+}
+
 .formation {
     margin-left: 50px;
-    height: 1500px;
-    width: 700px;
+    height: auto;
+    width: 100%;
 }
-.info{
-    width: 100px;
+
+.info {
     height: 100px;
+    width: 130px;
 }
+
 .itemexperience {
     display: flex;
     margin-left: 00px;
-    height: 180px;
+    height: auto;
     width: 700px;
 }
+
 .experience {
     margin-left: 50px;
-    height: 150px;
-    width: 700px
+    height: auto;
+    width: 100%;
 }
-.info {
-    width: 100px;
-}
+
 .itemrecommandations {
     display: flex;
-    height:250px;
-    width: 700px;;
+    height: auto;
+    width: 700px;
 }
+
 .recommandations {
     margin-left: 50px;
     width: auto;
     justify-content: space-around;
-    height: 300px;
+    height: auto;
 }
+
 .info i {
     color: coral;
 }
+
 .fa-swimmer {
     font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 5px;
 }
-.fa-running{
+
+.fa-running {
     font-size: 40px;
     border-radius: 50%;
     border: black 2px solid;
     padding: 10px 12px;
 }
+
 .fa-xbox {
     font-size: 40px;
     border-radius: 50%;
@@ -177,95 +221,136 @@ p{
 
 
 /*mise en forme pour mobile*/
-@media screen and (max-width: 1024px) 
-{
-#global {
-    display: flex;
-    flex-direction: column;
-    background-color: honeydew;  
-}
-    #left{
+@media screen and (max-width: 1024px) {
+    #global {
+        display: flex;
+        flex-direction: column;
+        background-color: honeydew;
+        height: auto;
+        width: 100%;
+    }
+
+    #left {
         margin: 0px;
-    }   
-#right{
-    padding-left: 0;
-    margin: 0px;
-}
-.photo img {
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    border: 3px solid yellow;
-    -moz-border-radius:75px;
-    -webkit-border-radius:75px;
-}
-h1 {
-    font-family: 'Amble-regular', 'arial', 'sans-serif';
-    color: darkorange;
-    font-size: 1.3em;
-    font-weight: 300;
-    text-align:left;
-}
-a:hover {
-    color: blue;
-}
-.itemformation {
-    flex-direction: column;
-    height: auto;
-    
-}
-.info{  
-    text-align: left;
-}
-.formation {
-    margin-left: 0;
-    text-align: justify;
-    height: auto;
-}
-.itemexperience {
-    flex-direction: column;
-    height: auto;
-}
-.experience {
-    margin-left: 0px;
-    text-align: justify;
-}
-.itemrecommandations {
-    flex-direction: column;
-    height:auto;
-}
-.recommandations {
-    margin-left: 0;
-    height: auto;
-}  
-.itemcontact {
-    height: auto;
-}
-.itemaproposdemoi {
-    height: auto;
-}
-.itemloisirs {
-    height: 110px;
-    text-align: center;
-    background-color: black;
-    color: floralwhite;
-}
-.fa-swimmer {
-    font-size: 20px;
-    border-radius: 50%;
-    border: black 2px solid;
-     padding: 10px 5px;
-}
-.fa-xbox{
-    font-size: 20px;
-    border-radius: 50%;
-    border: black 2px solid;
-    padding: 10px 12px;
-}
-.fa-running {
-    font-size: 20px;
-    border-radius: 50%;
-    border: black 2px solid;
-    padding: 10px 12px;  
-}
+        height: auto;
+        width: 100%;
+    }
+
+    #right {
+        padding-left: 0;
+        margin: 0px;
+        height: auto;
+    }
+
+    .photo img {
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        border: 3px solid yellow;
+        -moz-border-radius: 75px;
+        -webkit-border-radius: 75px;
+    }
+
+    .itemnom {
+        display: none;
+    }
+    .name h2{
+        background-color: #FFE082!important;
+        color: black!important;
+    }
+
+    h1 {
+        font-family: 'Amble-regular', 'arial', 'sans-serif';
+        color: darkorange;
+        font-size: 1.4em;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .name {
+        display: block;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    .itemformation {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .formation {
+        margin-left: 0;
+        text-align: justify;
+        height: auto;
+    }
+
+    .itemexperience {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .experience {
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .experience1{
+        width: 100%;
+    }
+
+    .itemrecommandations {
+        flex-direction: column;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .recommandations {
+        margin-left: 0;
+        height: auto;
+    }
+
+    .itemcontact,  .itemaproposdemoi {
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .itemloisirs {
+        height: 110px;
+        text-align: center;
+        background-color: black;
+        color: floralwhite;
+    }
+
+    .fa-swimmer {
+        font-size: 20px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 5px;
+    }
+
+    .fa-xbox {
+        font-size: 20px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 12px;
+    }
+
+    .fa-running {
+        font-size: 20px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 12px;
+    }
 }
