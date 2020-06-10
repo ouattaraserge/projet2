@@ -26,7 +26,7 @@
 #right {
     background-color: whitesmoke;
     border: 5px;
-    padding-left: 65px;
+    padding-left: 60px;
     flex: 2;
     display: inline-block;
     vertical-align: top;
@@ -44,9 +44,11 @@ h2 > span {
     text-decoration: underline;
     text-decoration-color: coral;
 }
-.itemnom h2{
+
+.itemnom h2 {
     font-size: 1.4em;
     font-family: "trebuchet ms";
+    margin-bottom: 110px;
 }
 
 #right h2 i {
@@ -77,39 +79,56 @@ h2 > span {
     width: 150px;
     border-radius: 100%;
     border: 3px;
-    margin-top: 30px;
+    margin-top: 90px;
     border: inset;
 }
 
 .itemcontact {
     height: auto;
-    margin-top: 90px;
-    margin-bottom: 100px;
-    
+    margin-top: 100px;
+    margin-bottom: 5px;
+
 }
 
 .infocontact {
     text-align: justify;
-    padding: 0 15px;
+    padding: 0 25px;
+    margin-bottom: 2px;
+}
+
+.infocontact p {
+    margin-bottom: 0px;
 }
 
 .infoaproposdemoi {
-    padding: 0 15px;
+    padding: 0 25px;
 }
 
 .itemaproposdemoi {
     height: 320px;
     margin-bottom: 400px;
+    margin-top: 60px;
 }
 
 .itemloisirs {
-    height: 320px;
+    margin-bottom: 30px;
+    margin-top: 180px;
+
+}
+
+#infoloisirs {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
 }
 
 h1 {
     font-size: 3.4em;
     font-family: 'ambleregular';
     font-weight: 300;
+    margin-top: 90px;
 }
 
 .name {
@@ -129,6 +148,7 @@ p {
     text-align: justify;
     word-wrap: break-word;
     text-align: justify;
+    font-size: 1.2em;
 }
 
 #right h1 strong {
@@ -140,15 +160,20 @@ p {
     display: flex;
     margin-left: 00px;
     height: 200px;
-    width: 700px;
+    width: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
-.itemformations, .itemexperiences, .itemRecom{
-     border-top: 2px solid coral;
+
+.itemformations, .itemexperiences, .itemRecom {
+    border-top: 2px solid coral;
     margin-top: 0;
     margin-right: 15px;
     padding-top: 15px;
 }
-.titleForm, .titleExperience, .titleRecom{
+}
+
+.titleForm, .titleExperience, .titleRecom {
     margin-top: 120px;
     margin-bottom: 4px;
 }
@@ -157,18 +182,19 @@ p {
     margin-left: 50px;
     height: auto;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .info {
     height: 100px;
-    width: 130px;
+    width: 140px;
 }
 
 .itemexperience {
     display: flex;
     margin-left: 00px;
     height: auto;
-    width: 700px;
+    width: auto;
 }
 
 .experience {
@@ -180,7 +206,7 @@ p {
 .itemrecommandations {
     display: flex;
     height: auto;
-    width: 700px;
+    width: auto;
 }
 
 .recommandations {
@@ -214,6 +240,7 @@ p {
     border: black 2px solid;
     padding: 10px 12px;
 }
+
 
 
 
@@ -254,14 +281,15 @@ p {
     .itemnom {
         display: none;
     }
-    .name h2{
-        background-color: #FFE082!important;
-        color: black!important;
+
+    .name h2 {
+        background-color: #FFE082 !important;
+        color: black !important;
     }
 
     h1 {
-        font-family: 'Amble-regular', 'arial', 'sans-serif';
-        color: darkorange;
+        font-family: "trebuchet ms";
+        color: blue;
         font-size: 1.4em;
         font-weight: 300;
         text-align: center;
@@ -276,9 +304,10 @@ p {
     }
 
     .itemformation {
-        flex-direction: column;
+        display: flex;
         height: auto;
         width: auto;
+        margin-top: 1px;
 
     }
 
@@ -290,48 +319,58 @@ p {
         margin-left: 0;
         text-align: justify;
         height: auto;
+        margin-bottom: 5px;
     }
 
     .itemexperience {
-        flex-direction: column;
+        display: flex;
         height: auto;
         width: 100%;
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
 
     .experience {
         margin-left: 0px;
         text-align: justify;
+        margin-bottom: 5px;
     }
-    .experience1{
+
+    .experience1 {
         width: 100%;
+        margin-bottom: 3px;
     }
 
     .itemrecommandations {
-        flex-direction: column;
+        display: flex;
         height: auto;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
     }
 
     .recommandations {
         margin-left: 0;
         height: auto;
+        margin-bottom: 3px;
     }
 
-    .itemcontact,  .itemaproposdemoi {
+    .itemcontact,
+    .itemaproposdemoi {
         height: auto;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
 
     .itemloisirs {
-        height: 110px;
         text-align: center;
         background-color: black;
         color: floralwhite;
+        height: auto;
     }
+
+    .infocontact p {
+        margin-bottom: 2px;
+    }
+
 
     .fa-swimmer {
         font-size: 20px;
