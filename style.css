@@ -75,17 +75,17 @@ h2 > span {
 .photo img {
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     border-radius: 100%;
-    border: 3px;
-    margin-top: 90px;
+    margin-top: 60px;
     border: inset;
+    padding: 6px;
 }
 
 .itemcontact {
     height: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 5px;
 
 }
@@ -94,6 +94,7 @@ h2 > span {
     text-align: justify;
     padding: 0 25px;
     margin-bottom: 2px;
+    margin-top: 30px;
 }
 
 .infocontact p {
@@ -102,17 +103,20 @@ h2 > span {
 
 .infoaproposdemoi {
     padding: 0 25px;
+    padding-top: 10px;
 }
 
 .itemaproposdemoi {
     height: 320px;
     margin-bottom: 400px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .itemloisirs {
-    margin-bottom: 30px;
-    margin-top: 180px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    height: 70px;
+    padding-top: 150px;
 
 }
 
@@ -121,14 +125,14 @@ h2 > span {
     justify-content: space-around;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 3.4em;
     font-family: 'ambleregular';
     font-weight: 300;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .name {
@@ -159,22 +163,32 @@ p {
 .itemformation {
     display: flex;
     margin-left: 00px;
-    height: 200px;
+    height: 230px;
     width: auto;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 3px;
+    margin-top: 3px;
 }
-
+.itemexperience {
+    display: flex;
+    margin-left: 00px;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+}
+.itemrecommandations {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+}
 .itemformations, .itemexperiences, .itemRecom {
     border-top: 2px solid coral;
     margin-top: 0;
     margin-right: 15px;
     padding-top: 15px;
 }
-}
-
 .titleForm, .titleExperience, .titleRecom {
-    margin-top: 120px;
+    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -182,7 +196,7 @@ p {
     margin-left: 50px;
     height: auto;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .info {
@@ -190,25 +204,11 @@ p {
     width: 140px;
 }
 
-.itemexperience {
-    display: flex;
-    margin-left: 00px;
-    height: auto;
-    width: auto;
-}
-
 .experience {
     margin-left: 50px;
     height: auto;
     width: 100%;
 }
-
-.itemrecommandations {
-    display: flex;
-    height: auto;
-    width: auto;
-}
-
 .recommandations {
     margin-left: 50px;
     width: auto;
@@ -252,7 +252,7 @@ p {
     #global {
         display: flex;
         flex-direction: column;
-        background-color: honeydew;
+        background-color: whitesmoke;
         height: auto;
         width: 100%;
     }
@@ -261,12 +261,14 @@ p {
         margin: 0px;
         height: auto;
         width: 100%;
+        background: none;
     }
 
     #right {
         padding-left: 0;
         margin: 0px;
         height: auto;
+        background: none;
     }
 
     .photo img {
@@ -356,19 +358,22 @@ p {
     .itemcontact,
     .itemaproposdemoi {
         height: auto;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-bottom: 2px;
+        padding-bottom: 1px;
     }
 
     .itemloisirs {
         text-align: center;
-        background-color: black;
+        background-color: lightgrey;
         color: floralwhite;
         height: auto;
+        margin-bottom: 1px;
+        margin-top: 1px;
     }
 
     .infocontact p {
-        margin-bottom: 2px;
+        margin-bottom: 0;
     }
 
 
