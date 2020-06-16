@@ -87,37 +87,30 @@ h2 > span {
     height: auto;
     margin-top: 80px;
     margin-bottom: 5px;
-
 }
-
 .infocontact {
     text-align: justify;
     padding: 0 25px;
     margin-bottom: 2px;
     margin-top: 30px;
 }
-
 .infocontact p {
     margin-bottom: 0px;
 }
-
 .infoaproposdemoi {
     padding: 0 25px;
     padding-top: 10px;
 }
-
 .itemaproposdemoi {
     height: 320px;
     margin-bottom: 400px;
     margin-top: 50px;
 }
-
 .itemloisirs {
     margin-bottom: 200px;
     margin-top: 200px;
     height: 70px;
     padding-top: 150px;
-
 }
 
 #infoloisirs {
@@ -134,7 +127,6 @@ h1 {
     font-weight: 300;
     margin-top: 50px;
 }
-
 .name {
     display: none;
 }
@@ -163,10 +155,9 @@ p {
 .itemformation {
     display: flex;
     margin-left: 00px;
-    height: 230px;
     width: auto;
     margin-bottom: 3px;
-    margin-top: 3px;
+    margin: 3px 0 1px 1px;
 }
 .itemexperience {
     display: flex;
@@ -181,11 +172,16 @@ p {
     width: auto;
     margin-top: 2px;
 }
-.itemformations, .itemexperiences, .itemRecom {
+.itemexperiences, .itemRecom {
     border-top: 2px solid coral;
     margin-top: 0;
     margin-right: 15px;
-    padding-top: 15px;
+    padding-top: 20px;
+}
+.itemformations{
+    border-top: 2px solid coral;
+    margin: 2px 15px 3px 0;
+    
 }
 .titleForm, .titleExperience, .titleRecom {
     margin-top: 20px;
@@ -193,7 +189,7 @@ p {
 }
 
 .formation {
-    margin-left: 50px;
+    margin: 2px 0 1px 50px;
     height: auto;
     width: 100%;
     margin-bottom: 10px;
@@ -355,8 +351,8 @@ p {
         margin-bottom: 3px;
     }
 
-    .itemcontact,
-    .itemaproposdemoi {
+    .itemcontact, .itemaproposdemoi
+     {
         height: auto;
         margin-top: 5px;
         margin-bottom: 2px;
@@ -367,9 +363,9 @@ p {
         text-align: center;
         background-color: lightgrey;
         color: floralwhite;
+        margin: 2px 0 4px 0px;
         height: auto;
-        margin-bottom: 1px;
-        margin-top: 1px;
+        padding: 1px;
     }
 
     .infocontact p {
