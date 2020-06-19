@@ -259,7 +259,7 @@ p {
 
 
 /*mise en forme pour mobile*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 490px) and (max-width: 1024px) {
     #global {
         display: flex;
         flex-direction: column;
@@ -349,11 +349,6 @@ p {
         margin-bottom: 5px;
     }
 
-    .experience1 {
-        width: 100%;
-        margin-bottom: 3px;
-    }
-
     .itemrecommandations {
         display: flex;
         height: auto;
@@ -379,6 +374,153 @@ p {
         background-color: lightgrey;
         color: floralwhite;
         margin: 2px 0 4px 0px;
+        height: auto;
+        padding: 1px;
+    }
+
+    .infocontact p {
+        margin-bottom: 0;
+    }
+
+
+    .fa-swimmer {
+        font-size: 20px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 5px;
+    }
+
+    .fa-xbox {
+        font-size: 20px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 12px;
+    }
+
+    .fa-running {
+        font-size: 20px;
+        border-radius: 50%;
+        border: black 2px solid;
+        padding: 10px 12px;
+    }
+}
+@media screen and (max-width: 490px){
+  
+    #global{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+       #global {
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        height: auto;
+        width: 100%;
+    }
+
+    #left {
+        margin: 0px;
+        height: auto;
+        width: 100%;
+        background: none;
+    }
+
+    #right {
+        padding-left: 0;
+        margin: 0px;
+        height: auto;
+        background: none;
+    }
+
+    .photo img {
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        border: 3px solid yellow;
+        -moz-border-radius: 75px;
+        -webkit-border-radius: 75px;
+    }
+
+    .itemnom {
+        display: none;
+    }
+
+    .name h2 {
+        background-color: #FFE082 !important;
+        color: black !important;
+    }
+
+    h1 {
+        font-family: "trebuchet ms";
+        color: blue;
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .name {
+        display: block;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .formation {
+        margin-left: 0;
+        text-align: left;
+        height: auto;
+        margin-bottom: 2px;
+    }
+    .itemformation{
+        display: flex;
+        flex-direction: column;
+    }
+    .itemexperience{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+
+    .experience {
+        margin-left: 0px;
+        text-align: left;
+        margin-bottom: 2px;
+    }
+    .experince p{
+        text-align: left!important;
+    }
+
+    .itemrecommandations {
+        display: flex;
+        height: auto;
+        margin-bottom: 2px;
+    }
+
+    .recommandations {
+        margin-left: 0;
+        height: auto;
+        margin-bottom: 2px;
+    }
+
+    .itemcontact,
+    .itemaproposdemoi {
+        height: auto;
+        margin-top: 2px;
+        margin-bottom: 1px;
+    }
+
+    .itemloisirs {
+        text-align: center;
+        background-color: lightgrey;
+        color: floralwhite;
+        margin: 2px 0 3px 0px;
         height: auto;
         padding: 1px;
     }
