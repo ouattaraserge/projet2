@@ -28,7 +28,6 @@
     border: 5px;
     padding-left: 60px;
     flex: 2;
-    display: inline-block;
     vertical-align: top;
 }
 
@@ -45,7 +44,7 @@ h2 > span {
     text-decoration-color: coral;
 }
 
-.itemnom h2 {
+header h2 {
     font-size: 1.4em;
     font-family: "trebuchet ms";
     margin-bottom: 110px;
@@ -158,41 +157,29 @@ p {
     font-weight: 300;
 }
 
-.itemformation {
+article {
     display: flex;
     margin-left: 00px;
     width: auto;
     margin-bottom: 3px;
     margin: 3px 0 1px 1px;
 }
-
-.itemexperience {
-    display: flex;
-    margin-left: 00px;
-    height: auto;
-    width: auto;
-    margin-top: 10px;
-}
-
-.itemrecommandations {
+footer {
     display: flex;
     height: auto;
     width: auto;
     margin-top: 2px;
-}
-
-.itemexperiences,
-.itemRecom {
     border-top: 2px solid coral;
-    margin-top: 0;
-    margin-right: 15px;
-    padding-top: 25px;
 }
-
-.itemformations {
+nav {
+    margin-left: 50px;
+    width: auto;
+    justify-content: space-around;
+    height: auto;
+}
+section {
     border-top: 2px solid coral;
     margin: 10px 25px 3px 0;
-
 }
 
 .titleForm,
@@ -201,32 +188,16 @@ p {
     margin-top: 20px;
     margin-bottom: 4px;
 }
-
-.formation {
-    margin: 2px 0 5px 50px;
-    height: auto;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 .info {
     height: 100px;
     width: 140px;
 }
 
-.experience {
+aside {
     margin-left: 50px;
     height: auto;
     width: 100%;
 }
-
-.recommandations {
-    margin-left: 50px;
-    width: auto;
-    justify-content: space-around;
-    height: auto;
-}
-
 .info i {
     color: coral;
 }
@@ -291,7 +262,7 @@ p {
         -webkit-border-radius: 75px;
     }
 
-    .itemnom {
+    header {
         display: none;
     }
 
@@ -316,26 +287,18 @@ p {
         color: blue;
     }
 
-    .itemformation {
-        display: flex;
-        height: auto;
-        width: auto;
-        margin-top: 1px;
-
-    }
-
     .info {
         text-align: left;
     }
 
-    .formation {
+    aside {
         margin-left: 0;
         text-align: justify;
         height: auto;
         margin-bottom: 5px;
     }
 
-    .itemexperience {
+    article {
         display: flex;
         height: auto;
         width: 100%;
@@ -343,19 +306,19 @@ p {
         margin-bottom: 3px;
     }
 
-    .experience {
+    aside {
         margin-left: 0px;
         text-align: justify;
         margin-bottom: 5px;
     }
 
-    .itemrecommandations {
+    footer {
         display: flex;
         height: auto;
         margin-bottom: 2px;
     }
 
-    .recommandations {
+    nav {
         margin-left: 0;
         height: auto;
         margin-bottom: 3px;
@@ -442,7 +405,7 @@ p {
         -webkit-border-radius: 75px;
     }
 
-    .itemnom {
+    header {
         display: none;
     }
 
@@ -470,40 +433,29 @@ p {
     .info {
         text-align: left;
     }
-
-    .formation {
-        margin-left: 0;
-        text-align: left;
-        height: auto;
-        margin-bottom: 2px;
-    }
-    .itemformation{
-        display: flex;
-        flex-direction: column;
-    }
-    .itemexperience{
+    article{
         display: flex;
         flex-direction: column;
         text-align: left;
     }
 
 
-    .experience {
+    aside {
         margin-left: 0px;
         text-align: left;
         margin-bottom: 2px;
     }
-    .experince p{
+    aside p{
         text-align: left!important;
     }
 
-    .itemrecommandations {
+    footer {
         display: flex;
         height: auto;
         margin-bottom: 2px;
     }
 
-    .recommandations {
+    nav {
         margin-left: 0;
         height: auto;
         margin-bottom: 2px;
