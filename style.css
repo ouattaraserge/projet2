@@ -51,7 +51,6 @@ header h2 {
 }
 
 #right h2 i {
-    display: inline-block;
     margin-right: 25px;
 }
 
@@ -164,6 +163,14 @@ article {
     margin-bottom: 3px;
     margin: 3px 0 1px 1px;
 }
+ {
+    display: flex;
+    margin-left: 00px;
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+}
+
 footer {
     display: flex;
     height: auto;
@@ -188,6 +195,14 @@ section {
     margin-top: 20px;
     margin-bottom: 4px;
 }
+
+.formation {
+    margin: 2px 0 5px 50px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .info {
     height: 100px;
     width: 140px;
@@ -280,18 +295,26 @@ aside {
     }
 
     .name {
-        display: block;
+        display: grid;
     }
 
     a:hover {
         color: blue;
     }
 
+    .itemformation {
+        display: flex;
+        height: auto;
+        width: auto;
+        margin-top: 1px;
+
+    }
+
     .info {
         text-align: left;
     }
 
-    aside {
+    .formation {
         margin-left: 0;
         text-align: justify;
         height: auto;
@@ -423,7 +446,7 @@ aside {
     }
 
     .name {
-        display: block;
+        display: grid;
     }
 
     a:hover {
@@ -432,6 +455,17 @@ aside {
 
     .info {
         text-align: left;
+    }
+
+    .formation {
+        margin-left: 0;
+        text-align: left;
+        height: auto;
+        margin-bottom: 2px;
+    }
+    .itemformation{
+        display: flex;
+        flex-direction: column;
     }
     article{
         display: flex;
